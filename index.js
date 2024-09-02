@@ -1,10 +1,56 @@
-const arimathic = require('./src/index');
+// index.js
 
-// Test arithmetic operations
-console.log('Addition:', arimathic.arithmetic.add(5, 3));        // 8
-console.log('Subtraction:', arimathic.arithmetic.subtract(5, 3)); // 2
-console.log('Multiplication:', arimathic.arithmetic.multiply(5, 3)); // 15
-console.log('Division:', arimathic.arithmetic.divide(10, 2)); // 5
-console.log('Modulus:', arimathic.arithmetic.remainder(10, 3)); // 1
-console.log('Exponentiation:', arimathic.arithmetic.exponentiate(2, 3)); // 8
-console.log('Floor Division:', arimathic.arithmetic.floorDivide(10, 3)); // 3
+const arithmetic = require('./src/arithmetic');
+const algebra = require('./src/algebra');
+const geometry = require('./src/geometry');
+const calculus = require('./src/calculus');
+const trigonometry = require('./src/trigonometry');
+const statistics = require('./src/statistics');
+const numberTheory = require('./src/numberTheory');
+const linearAlgebra = require('./src/linearAlgebra');
+const setTheory = require('./src/setTheory');
+const combinatorics = require('./src/combinatorics');
+const graphTheory = require('./src/graphTheory');
+const booleanAlgebra = require('./src/booleanAlgebra');
+const miscellaneous = require('./src/miscellaneous');
+
+module.exports = {
+    // Arithmetic Operations
+    ...arithmetic,
+
+    // Algebra
+    ...algebra,
+
+    // Geometry
+    ...geometry,
+
+    // Calculus
+    ...calculus,
+
+    // Trigonometry
+    ...trigonometry,
+
+    // Statistics
+    ...statistics,
+
+    // Number Theory
+    ...numberTheory,
+
+    // Linear Algebra
+    ...linearAlgebra,
+
+    // Set Theory
+    ...setTheory,
+
+    // Combinatorics
+    ...combinatorics,
+
+    // Graph Theory
+    ...graphTheory,
+
+    // Boolean Algebra
+    ...booleanAlgebra,
+
+    // Miscellaneous
+    ...miscellaneous
+};
