@@ -1,0 +1,22 @@
+{
+  "name": "arithamathic",
+  "version": "0.0.1",
+  "description": "A library that make Maths calculations, easy. It can perform calculations ranging from basic Arithmetic to hard Algebra!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshlil/arithamathic.git"
+  },
+  "keywords": [
+    "Maths"
+  ],
+  "author": "Laksh Lilhare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lakshlil/arithamathic/issues"
+  },
+  "homepage": "https://github.com/lakshlil/arithamathic#readme"
+}
