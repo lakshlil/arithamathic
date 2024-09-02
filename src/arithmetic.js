@@ -48,7 +48,7 @@ function divide(a, b) {
  * @param {number} b - The divisor.
  * @returns {number} - The remainder of a divided by b.
  */
-function modulus(a, b) {
+function remainder(a, b) {
     return a % b;
 }
 
@@ -81,7 +81,7 @@ module.exports = {
     subtract,
     multiply,
     divide,
-    remainder: modulus,
+    remainder,
     exponentiate,
     floorDivide
 };
