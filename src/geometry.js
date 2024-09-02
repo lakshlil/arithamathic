@@ -98,6 +98,65 @@ function angleBetweenVectors(vector1, vector2) {
     return angleRad * (180 / Math.PI); // convert radians to degrees
 }
 
+/**
+ * Calculates the length of the hypotenuse of a right triangle using the Pythagorean theorem.
+ * @param {number} a - The length of one leg of the triangle.
+ * @param {number} b - The length of the other leg of the triangle.
+ * @returns {number} - The length of the hypotenuse.
+ */
+function pythagoreanTheorem(a, b) {
+    return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+}
+
+/**
+ * Calculates the slope of a line given two points.
+ * @param {number} x1 - The x-coordinate of the first point.
+ * @param {number} y1 - The y-coordinate of the first point.
+ * @param {number} x2 - The x-coordinate of the second point.
+ * @param {number} y2 - The y-coordinate of the second point.
+ * @returns {number} - The slope of the line.
+ * @throws {Error} - If the line is vertical (x1 === x2).
+ */
+function slope(x1, y1, x2, y2) {
+    if (x1 === x2) {
+        throw new Error("Vertical line has an undefined slope.");
+    }
+    return (y2 - y1) / (x2 - x1);
+}
+
+/**
+ * Calculates the midpoint of a line segment given two points.
+ * @param {number} x1 - The x-coordinate of the first point.
+ * @param {number} y1 - The y-coordinate of the first point.
+ * @param {number} x2 - The x-coordinate of the second point.
+ * @param {number} y2 - The y-coordinate of the second point.
+ * @returns {Object} - An object with `x` and `y` coordinates of the midpoint.
+ */
+function midpoint(x1, y1, x2, y2) {
+    return {
+        x: (x1 + x2) / 2,
+        y: (y1 + y2) / 2
+    };
+}
+
+/**
+ * Calculates the equation of a line in slope-intercept form (y = mx + b).
+ * @param {number} x1 - The x-coordinate of the first point.
+ * @param {number} y1 - The y-coordinate of the first point.
+ * @param {number} x2 - The x-coordinate of the second point.
+ * @param {number} y2 - The y-coordinate of the second point.
+ * @returns {Object} - An object with `slope` and `yIntercept` of the line.
+ * @throws {Error} - If the line is vertical (x1 === x2).
+ */
+function lineEquation(x1, y1, x2, y2) {
+    const m = slope(x1, y1, x2, y2);
+    const b = y1 - m * x1;
+    return {
+        slope: m,
+        yIntercept: b
+    };
+}
+
 module.exports = {
     areaRectangle,
     perimeterRectangle,
@@ -107,5 +166,9 @@ module.exports = {
     volumeSphere,
     surfaceAreaSphere,
     distanceBetweenPoints,
-    angleBetweenVectors
+    angleBetweenVectors,
+    pythagoreanTheorem,
+    slope,
+    midpoint,
+    lineEquation
 };
