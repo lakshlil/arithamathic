@@ -1,6 +1,6 @@
-# Arimathic
+# arithamathic
 
-`arimathic` is a comprehensive Node.js library providing a wide range of mathematical operations. From basic arithmetic to advanced calculus, this library aims to cover various mathematical needs.
+`arithamathic` is a comprehensive Node.js library providing a wide range of mathematical operations. From basic arithmetic to advanced calculus, this library aims to cover various mathematical needs.
 
 ## Features
 
@@ -76,16 +76,16 @@
 ## Installation
 
 ```bash
-npm install arimathic
+npm install arithamathic
 ```
 
 ## Usage
 
 ```javascript
-const arimathic = require('arimathic');
+const arithamathic = require('arithamathic');
 
 // Example: Arithmetic Operations
-console.log(arimathic.add(5, 3)); // Output: 8
+console.log(arithamathic.add(5, 3)); // Output: 8
 ```
 
 For detailed documentation, please refer to our [Docusaurus site](URL_TO_DOCUSaurus_DOCUMENTATION).
