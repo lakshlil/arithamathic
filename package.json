@@ -1,11 +1,8 @@
 {
-  "name": "arithamathic",
+  "name": "@lakshlil/arithamathic",
   "version": "0.0.1",
-  "description": "A library that make Maths calculations, easy. It can perform calculations ranging from basic Arithmetic to hard Algebra!",
+  "description": "A library that make Maths calculations, easy. It can perform calculations ranging from basic Arithmetic to complex Algebra!",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lakshlil/arithamathic.git"
